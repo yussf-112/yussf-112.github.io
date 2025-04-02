@@ -1,0 +1,23 @@
+body {
+background-image: url(../ocean.gif);
+background-size: cover;
+}
+#winds,#freedom {
+z-index: 999;
+color: white;
+display:none;
+}
+#test {
+position: absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+height:300px;
+width:500px;
+padding: 10px;
+background-color:black;
+opacity:60%;
+z-index:999;
+color: white;
+display: noe;
+}

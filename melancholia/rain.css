@@ -1,0 +1,17 @@
+body {
+background-image:url(../city.gif);
+background-size: cover;
+}
+#mlk {
+position: fixed;
+bottom: 0;
+right: 0;
+}
+#yourself {
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-size: 25;
+color: #e4e4e4;
+position: absolute;
+top: 250px;
+left: 150px;
+}
