@@ -31,6 +31,17 @@ cursor: pointer;
 table a:hover {
 color: grey;
 }
+#playlist {
+height: 440px;
+}
+#playlist a {
+cursor: pointer;
+text-decoration: none;
+color: black;
+}
+#playlist a:hover {
+color: grey;
+}
 ::-webkit-scrollbar {
 width: 17px;
 }

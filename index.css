@@ -2,6 +2,10 @@
 font-family: "29LT Makina";
 src: url("../29ltmakina.otf") format("otf"),
 }
+@font-face {
+font-family: "29LT Makina";
+src: url("../29ltmakina.otf") format("otf"),
+}
 body {
 font-family:"29LT Makina";
 font-size: 20;

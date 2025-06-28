@@ -1,14 +1,40 @@
 const an8am = document.getElementById("nostalgia");
 const ppb = document.getElementById("an8am");
+const change = document.getElementById("change");
+const playlist = document.getElementById("playlist");
+let pc = false;
 let lastsong = -1;
 let songs = [
-"song1.mp3",
+"nostalgia.mp3",
 "song2.mp3",
 "song3.mp3",
 "song4.mp3"
 ];
-function openwindow() {
-let thewindow = window.open("", "thoughts", "width=500,height=464");
+change.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+  if (pc) {
+    playlist.style.overflowY = "hidden";
+    playlist.style.overflowX = "hidden";
+    playlist.style.paddingLeft = "0px";
+    playlist.style.paddingRight = "0px";
+    playlist.innerHTML = '<img src="../leaves2.png" height="273px">';
+    pc = false;
+  } else {
+    playlist.style.height = "273px";
+    playlist.style.overflowY = "auto";
+    playlist.style.overflowX = "hidden";
+    playlist.style.paddingLeft = "28px";
+    playlist.style.paddingRight = "28px";
+    playlist.innerHTML = '<a onclick="an8am.src=`hell`">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br>';
+    pc = true;
+  }
+});
+function things() {
+const width = 500;
+const height = 464;
+const left = (screen.width / 2) - (width / 2);
+const top = (screen.height / 2) - (height / 2);
+let thewindow = window.open("", "thoughts", `width=${width},height=${height},top=${top},left=${left},resizable=no,scrollbars=no`);
 thewindow.document.write(`
         <html>
         <head>
@@ -86,7 +112,11 @@ thewindow.document.write(`
     thewindow.document.close();
 }
 function home() {
-let thewindow = window.open("", "home", "width=680,height=512");
+const width = 680;
+const height = 512;
+const left = (screen.width / 2) - (width / 2);
+const top = (screen.height / 2) - (height / 2);
+let thewindow = window.open("", "home", `width=${width},height=${height},top=${top},left=${left},resizable=no,scrollbars=no`);
 thewindow.document.write(`
 <html>
 <head>
@@ -130,6 +160,83 @@ transform:translate(-50%,-50%);
 <div id="home">
 <a>test test <br>testfkbiher</a>
 </div>
+</body>
+</html>
+`);
+}
+function regrets() {
+const width = 880;
+const height = 712;
+const left = (screen.width / 2) - (width / 2);
+const top = (screen.height / 2) - (height / 2) - 50;
+let thewindow = window.open("", "regrets", `width=${width},height=${height},top=${top},left=${left},resizable=no,scrollbars=no`);
+thewindow.document.write(`
+<html>
+<head>
+<title>Document</title>
+<style>
+@font-face {
+font-family: "29LT Makina";
+src: url("../29ltmakina.otf") format("otf"),
+}
+body {
+font-family:"29LT Makina";
+overflow:hidden;
+}
+#notebook {
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+}
+#regrets {
+position: absolute;
+top:30px;
+left:35px;
+transform: rotate(-1deg);
+width: 300px;
+height: 420px;
+overflow-y:auto;
+overflow-x: hidden;
+white-space-collapse:preserve;
+}
+#theregrets {
+position: absolute;
+top:120px;
+left:445px;
+transform: rotate(1deg);
+width: 130px;
+height: 180px;
+white-space-collapse:preserve;
+}
+#IAM {
+position: absolute;
+width: 130px;
+height: 180px;
+background-color: aqua;
+}
+</style>
+</head>
+<body>
+<div id="notebook">
+<img src="../regrets.png" width="700px">
+<div id="regrets">oh god it has happened i am in absolute tears i couldnt even hold my strengh together please god just this one tuime before regret kills me, let me fix what i have done but oh what abou
+</div>
+<div id="theregrets">"regrets"
+<a onclick="" title="but i wasn't">i thought i was better</a>
+<a href="">i hope i made u happy</a>
+<a href="">that love</a>
+</div>
+</div> 
+<DIV ID="IAM" onclick="IAM()"></DIV> 
+<script>
+function IAM() {
+document.body.innerHTML="<div style='position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);'>all regrets will burn,<br>and leave beneath its ashes grief.</div>";
+setTimeout(() => {
+window.close();
+}, 2000);
+}
+</script>
 </body>
 </html>
 `);
