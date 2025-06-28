@@ -25,7 +25,7 @@ change.addEventListener("contextmenu", (e) => {
     playlist.style.overflowX = "hidden";
     playlist.style.paddingLeft = "28px";
     playlist.style.paddingRight = "28px";
-    playlist.innerHTML = '<a onclick="an8am.src=`hell`">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br>';
+    playlist.innerHTML = '<a onclick="an8am.src=`found.mp3`">found - </a><br><a onclick="">it\'s snowing like it\'s the end of the world - </a><br><a onclick="">in my head - bedroom</a><br><a onclick="">and this too shall pass - </a><br><a onclick="">kiss in october - </a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br><a onclick="">all i am is a man</a><br>';
     pc = true;
   }
 });
